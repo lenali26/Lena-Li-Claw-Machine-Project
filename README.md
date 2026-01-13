@@ -1,4 +1,4 @@
-# Lena-Li - DE Final Capstone Project 
+# Lena Li - DE Final Capstone Project 
 ## Arduino Claw Machine Project Overview 
 
 This project is a robust claw-machine built using Arduino, stepper motors, servo control, and a joystick input. It is fully functional and we focused on making the build durable and very user-friendly as it is designed for kids ages 5-11. This goal of this project is to donate it to BLAST, an afterschool program at Los Peñasquitos Elementary School that has parterned with Westview's Robotics Team - Option 16. We hope to provide the students with a fun reward for their hard work in engaging in FIRST Robotics. 
