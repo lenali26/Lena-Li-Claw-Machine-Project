@@ -24,7 +24,7 @@ X/Y gantry system & Z-direction pulley design for precise claw movement
 This project was completed as a collaboration between:
 
 - Lena Li @lenali26 (me) 
-- Claire Zhu @clairezzhu (me)
+- Claire Zhu @clairezzhu
 - Nora Dunn @norad4309
 
 All team members contributed to research, design, testing, and coding of the Arduino Claw Machine.
