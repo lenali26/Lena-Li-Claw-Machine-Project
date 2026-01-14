@@ -79,7 +79,7 @@ All motors and components were tested individually before integration:
 Full code is still in progress. The completed project code will be available in the `code/` folder when done. 
 
 ## Wiring Diagram
-[Wiring Diagram](WiringDiagram.pdf)
+![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Wiring%20Diagram.pdf)
 
 
 ## Assembly Plan
