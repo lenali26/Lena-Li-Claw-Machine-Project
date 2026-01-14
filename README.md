@@ -61,7 +61,7 @@ All motors and components were tested individually before integration:
 | Joystick       | Analog X/Y           | Controlled gantry axes successfully             |
 | Limit Switches | Digital input        | Effectively stops motion and prevents over-travel |
 
-*Test codes are in the `Code/` folder.*
+*Test codes are in the `Code` folder.*
 
 ---
 ## Demo
@@ -76,7 +76,7 @@ All motors and components were tested individually before integration:
 
 ---
 ## Code
-Full code is still in progress. The completed project code will be available in the `Code/` folder when done. 
+Full code is still in progress. The completed project code will be available in the `Code` folder when done. 
 
 ## Wiring Diagram
 ![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Wiring%20Diagram.jpg)
