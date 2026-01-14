@@ -1,0 +1,66 @@
+// Analog Joystick Testing --> Without the gantry this code is to see if the joystick can control the direction of motion
+
+#define ANALOG_X_PIN A2 //X-axis of joystick, this is connected to pin A2 
+#define ANALOG_Y_PIN A3 //Y-Axis of joystick, this is connected to pin A3 
+#define ANALOG_BUTTON_PIN A4 //This is the button connected to the joystick (when it's pressed down)
+//This is used to determine which ports to put the analog joystick in --> these pints can be changed because I didn't do testing on the final board
+	 
+//Default values when axis not actioned 
+#define ANALOG_X_CORRECTION 128 
+#define ANALOG_Y_CORRECTION 128 
+//these are used to make the joystick's position go back to 0 after it moves. 
+	 
+struct button { 
+	 byte pressed = 0; //this stores the data if the button is pressed or not 
+   // this value can either be 0 or 1, but when stationary, it's 0
+}; 
+	 
+struct analog { 
+	 short x, y;        //the X & Y values that control the joystick movement 
+	 button button;     //connecting to a button outside of the one just in the joystick 
+                      // We will be using 2-3 buttons so I will still need to figure out how to add multiple buttons into the code
+}; 
+	 
+void setup() 
+{ 
+	 pinMode(ANALOG_BUTTON_PIN, INPUT_PULLUP);    // Sets the pin as an input --> this tells us the state of the joystick 
+                                                // When pressed = LOW, when unpressed = HIGH
+	 Serial.begin(115200);                        // This is the speed --> this value can be changed, will determine on the testing
+} 
+	 
+void loop() 
+{ 
+	 analog analog;                                                       //creating an analog object
+	 
+   analog.x = readAnalogAxisLevel(ANALOG_X_PIN) - ANALOG_X_CORRECTION;  // Read X axis and maping it's position, subtracts correction so center remains 0
+	 analog.y = readAnalogAxisLevel(ANALOG_Y_PIN) - ANALOG_Y_CORRECTION;  // Read Y axis and maping it's position, subtracts correction so center remains 0
+	 
+	 analog.button.pressed = isAnalogButtonPressed(ANALOG_BUTTON_PIN);    // Is the button pressed? 
+	 
+	 Serial.print("X:");                                                  //X is printed on monitor 
+	 Serial.println(analog.x); 
+	 
+	 Serial.print("Y:");                                                  //Y is printed on monitor 
+	 Serial.println(analog.y); 
+	 
+   //if loop to check if button is actually pressed 
+	 if (analog.button.pressed) { 
+	   Serial.println("Button pressed"); 
+	 } else { 
+	   Serial.println("Button not pressed"); 
+	 } 
+	 
+	 delay(200);                                                           //Using a delay because it takes time for it to read 
+} 
+
+//Mapping the analog joystick axis
+byte readAnalogAxisLevel(int pin) 
+{ 
+	 return map(analogRead(pin), 0, 1023, 0, 255); 
+} 
+
+//Check if button is pressed 	 
+bool isAnalogButtonPressed(int pin) 
+{ 
+	 return digitalRead(pin) == 0;      //Pressed = Low (0), Not pressed = High (1) 
+}
