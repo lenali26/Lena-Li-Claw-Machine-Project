@@ -95,6 +95,12 @@ Full code is still in progress. The completed project code will be available in 
 10. Integrate all code and run full test
 11. If parts of the test is not working smoothly, troubleshoot until successful!
 
+## User Guide 
+When the claw machine is wired and powered up, it is controlled by the control panel. The joystick controls the gantry system of the x, y plane, meaning it goes forward, backward, leftward, rightward. After finding the right position, pressing the button will make the claw go down. <br/>
+As the claw goes down to grab the items, the claw will automically open because of our code. After reaching the bottom, the claw will slowly close and then start going back up, dropping it into the hole. To acomplish this, we will code the plane where (0,0) is and write logic for the claw to go back to the position after going down. 
+
+---
+
 ## Reflections and Connections 
 **Reflections**<br/>
 Overall, I really enjoyed this project because I was able to learn how to control mechanisms like the servo and the stepper motor that I don't normally learn how to do in PLTW classes. Additionally, I learned a lot about troubleshooting and utilizing resources to help me learn. I enjoyed the arduino websites because you could look for parts and see how it's generically coded/wired and then utilize your own testing and designing to create your own board. To sum up, I really liked this project and I'm excited to finish building it even after the class is ending. 
