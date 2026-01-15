@@ -133,6 +133,14 @@ Overall, I really enjoyed this project because I was able to learn how to contro
 **Connections**<br/>
 For me, I was really interested in building this claw machine because I am very involved in the mentoring in Option 16. At BLAST, I created very personal connections with a lot of the kids there and I realized that they needed help focusing and becoming interested in STEM. Creating a claw machine for them seemed like the perfect solution; not only will they be able to recieve a reward after some hard work, they'll also be seeing how mechanisms can be designed and created. I'm so excited to see their reactions once we donate it to them! 
 
+## Skills Demonstrated
+- Embedded systems programming (Arduino/C++)
+- Motor control (stepper & servo)
+- Hardware & software integration
+- Electrical safety and power management
+- Fusion 360 CAD
+- Team collaboration and documentation
+
 
 ## References
 - Arduino Mega: https://store.arduino.cc/products/arduino-mega-2560-rev3
