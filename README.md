@@ -29,6 +29,9 @@ This project was completed as a collaboration between:
 
 All team members contributed to research, design, testing, and coding of the Arduino Claw Machine.
 
+## Engineering Design Process 
+![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Engineering%20Design%20Process.jpg)
+
 ---
 ## Bill of Materials 
 
@@ -79,7 +82,7 @@ All motors and components were tested individually before integration:
 Full code is still in progress. The completed project code will be available in the `Code` folder when done. 
 
 ## Wiring Diagram
-![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Wiring%20Diagram.jpg)
+![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Electrical%20Components/Wiring%20Diagram.jpg)
 
 
 ## Assembly Plan
