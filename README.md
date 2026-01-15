@@ -83,6 +83,26 @@ Full code is still in progress. The completed project code will be available in 
 Basic Coding Outline
 ![Coding_Outline](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Code/Code%20Outline.jpg)
 
+### Technical Challenges
+
+The major technical problem that I encountered while testing my code was that we didn't calculate the load for the motors and when we attempted to test the smaller motors that came with the arduino kit, the motor didn't turn with enough force. Although we hadn't attached it onto the gantry to see it run, even when we just put it into the breadboard the motor was barely turning. This put a set back on us because we needed to wait to order for the servo and stepper motor that have a stronger load of 25kg. After the motors arrived, we were able to create more code and see the motor actually turn with the correct speed and power to allow the gantry to move. 
+
+### Organization
+
+#### setup()
+
+The initial `setup()` function is used to set up the input pins to read from the sensors and record the initial position of the rotary encoder.
+
+#### loop()
+
+The main `loop()`function reads data from the sensors and stimulates the claw to move in different directions and be able to grab the items. It performs the following tasks in sequence.
+
+ 1. Read the position of the claw.
+ 2. Determine if the joystick switch has been pressed and switch between claw machine on and off mode, accordingly.
+ 3. Determine if the start button has been pressed and switch between servo and stepper motors on or off, accordingly.
+ 4. If the down button is clicked, start stimulating the servo motor so that the claw opens, and then closes after reaching the bottom of the machine.
+ 5. Continue moving the motors and sensors until something is picked up. 
+
 ## Wiring Diagram
 ![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Electrical%20Components/Wiring%20Diagram.jpg)
 
