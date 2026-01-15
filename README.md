@@ -79,7 +79,9 @@ All motors and components were tested individually before integration:
 
 ---
 ## Code
-Full code is still in progress. The completed project code will be available in the `Code` folder when done. 
+Full code is still in progress. The completed project code will be available in the `Code` folder when done. <br/>
+Basic Coding Outline
+![Coding_Outline](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Code/Code%20Outline.jpg)
 
 ## Wiring Diagram
 ![Wiring Diagram](https://github.com/lenali26/Lena-Li-Claw-Machine-Project/blob/main/Electrical%20Components/Wiring%20Diagram.jpg)
